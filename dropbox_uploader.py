@@ -18,6 +18,7 @@ import dropbox
 # OAuth2 access token.  TODO: login etc.
 TOKEN = 'DROPBOX_APP_TOKEN'
 
+# Set folder names, current 'Test' (remote) under path "/home/pi/Test" (local)
 parser = argparse.ArgumentParser(description='Sync /home/pi/Test to Dropbox')
 parser.add_argument('folder', nargs='?', default='Test',
                     help='Folder name in your Dropbox')
